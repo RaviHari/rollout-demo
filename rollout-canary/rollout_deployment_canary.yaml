@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: rollouts-demo
+  name: rollouts-canary-demo
   namespace: rolloutdemo
 spec:
   replicas: 5
