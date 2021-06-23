@@ -13,7 +13,7 @@ spec:
       - analysis:
           templates:
           - templateName: pass 
-            clusterScope: true
+            clusterScope: false
       - setWeight: 40
       - pause: {duration: 60}
       - setWeight: 60
