@@ -10,7 +10,6 @@ metadata:
 spec:
   metrics:
   - name: pass
-    interval: 5s
     failureLimit: 1
     provider:
       job:
