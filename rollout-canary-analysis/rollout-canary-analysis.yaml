@@ -7,12 +7,13 @@ spec:
   replicas: 5
   strategy:
     canary:
-      analysis:
-        templates:
-        - templateName: pass   
       steps:
       - setWeight: 20
       - pause: {}
+      - analysis:
+          templates:
+          - templateName: pass 
+            clusterScope: true
       - setWeight: 40
       - pause: {duration: 60}
       - setWeight: 60
