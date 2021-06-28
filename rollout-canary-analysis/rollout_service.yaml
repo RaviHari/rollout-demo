@@ -12,20 +12,3 @@ spec:
     name: http
   selector:
     app: rollouts-demo
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: rollouts-demo-lb
-  namespace: rolloutdemo
-spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: http
-    protocol: TCP
-    name: http
-  selector:
-    app: rollouts-demo
-  loadBalancerSourceRanges:
-  - 10.0.0.0/8
