@@ -4,7 +4,7 @@ metadata:
   name: rollouts-demo
   namespace: rolloutdemo
 spec:
-  type: Nodeport
+  type: NodePort
   ports:
   - port: 80
     targetPort: http
