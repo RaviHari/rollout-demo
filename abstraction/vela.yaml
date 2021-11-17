@@ -2,7 +2,7 @@ name: demo
 services:
   testsvc:
     type: webservice
-    image: crccheck/hello-world
+    image: docker.intuit.com/personal/rhari/oamdev/hello-world:v1
     port: 8000
     route:
       domain: testsvc.example.com
